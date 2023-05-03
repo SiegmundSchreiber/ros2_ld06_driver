@@ -5,6 +5,10 @@
 
 ## operating check environment
 
+| OS           | ros2 distribution |
+| ------------ | ----------------- |
+| ubuntu 20.04 | foxy              |
+
 ## how to use
 
 ### how to build
