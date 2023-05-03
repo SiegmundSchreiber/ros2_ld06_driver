@@ -5,7 +5,7 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package="sdk_ld06_raspberry_ros_wrapper_for_ros2",
-            executable="main",
+            executable="lidar",
             name="lidar",
             output="screen",
             emulate_tty=True,
