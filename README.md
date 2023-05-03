@@ -3,6 +3,8 @@
 [sdk_ld06_raspberry_ros](https://github.com/LetsOKdo/sdk_ld06_raspberry_ros)をROS2用に魔改造したものです
 
 
+## operating check environment
+
 ## how to use
 
 ### how to build
