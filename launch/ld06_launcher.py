@@ -12,7 +12,7 @@ def generate_launch_description():
             parameters=[
                 {"topic_name": "lidar_msg"},
                 {"port_name" : "/dev/ttyUSB0"},
-                {"frame_id"  : "lidar_frame"},
+                {"frame_id"  : "laser_frame"},
             ],
         )
     ])
