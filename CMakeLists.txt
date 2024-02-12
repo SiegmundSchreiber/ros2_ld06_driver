@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(sdk_ld06_raspberry_ros_wrapper_for_ros2)
+project(ros2_ld06_driver)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)

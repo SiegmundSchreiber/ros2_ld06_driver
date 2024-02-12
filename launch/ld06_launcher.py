@@ -4,7 +4,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         Node(
-            package="sdk_ld06_raspberry_ros_wrapper_for_ros2",
+            package="ros2_ld06_driver",
             executable="lidar",
             name="lidar",
             output="screen",
