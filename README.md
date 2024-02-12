@@ -1,28 +1,27 @@
-# sdk_ld06_raspberry_ros_wrapper_for_ros2
+# ros2_ld06_driver
 
-[sdk_ld06_raspberry_ros](https://github.com/LetsOKdo/sdk_ld06_raspberry_ros)をROS2用に魔改造したものです
-
+Driver for th OKDO LD06 Lidar Hat
 
 ## operating check environment
 
 | OS           | ros2 distribution |
 | ------------ | ----------------- |
-| ubuntu 20.04 | foxy              |
+| ubuntu 22.04 | humble              |
 
 ## how to use
 
 ### how to build
 
 ```sh
-$ git clone https://github.com/naga-karupi/sdk_ld06_raspberry_ros_wrapper_for_ros2.git
-$ cd sdk_ld06_raspberry_ros_wrapper_for_ros2
+$ git clone https://github.com/SiegmundSchreiber/ros2_ld06_driver.git 
+$ cd ros2 launch ros2_ld06_driver
 $ colcon build
 ```
 
 ### launch node
 
 ```sh
-$ ros2 launch sdk_ld06_raspberry_ros_wrapper_for_ros2 ld06_launcher.py
+$ ros2 launch ros2_ld06_driver ld06_launcher.py
 ```
 
 ### custom topic name
@@ -36,7 +35,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         Node(
-            package="sdk_ld06_raspberry_ros_wrapper_for_ros2",
+            package="ros2_ld06_driver",
             executable="lidar",
             name="lidar",
             output="screen",
